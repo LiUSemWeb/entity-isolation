@@ -1,0 +1,412 @@
+{
+  "Association|Association": {
+    "name": "Association",
+    "desc": "",
+    "prompt_xy": "There is an association between ?x and ?y.",
+    "domain": [
+      "ChemicalEntity",
+      "GeneOrGeneProduct",
+      "SequenceVariant"
+    ],
+    "range": [
+      "DiseaseOrPhenotypicFeature",
+      "GeneOrGeneProduct",
+      "ChemicalEntity",
+      "SequenceVariant"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Association|Regulation": {
+    "name": "Regulation",
+    "desc": "",
+    "prompt_xy": "The gene ?x regulates ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Association|Modification": {
+    "name": "Modification",
+    "desc": "",
+    "prompt_xy": "The gene ?x modifies ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Association|Chem_Modification": {
+    "name": "Chemical_Modification",
+    "desc": "",
+    "prompt_xy": "?x modifies the gene ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Bind|Bind": {
+    "name": "Bind",
+    "desc": "",
+    "prompt_xy": "?x binds to ?y.",
+    "prompt_yx": "?y binds to ?x.",
+    "domain": [
+      "GeneOrGeneProduct",
+      "ChemicalEntity"
+    ],
+    "range": [
+      "ChemicalEntity",
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Bind|Receptor": {
+    "name": "Receptor",
+    "desc": "",
+    "prompt_xy": "?x binds to ?y receptors.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Cotreatment": {
+    "name": "Cotreatment",
+    "desc": "",
+    "prompt_xy": "A combination of ?x and ?y can be used to treat a medical condition.",
+    "prompt_yx": "A combination of ?y and ?x can be used to treat a medical condition.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Drug_Interaction": {
+    "name": "Drug_Interaction",
+    "desc": "",
+    "prompt_xy": "The drug ?x has a pharmacodynamic interaction with ?y when taken at the same time.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Downregulation": {
+    "name": "Downregulation",
+    "desc": "",
+    "prompt_xy": "?x downregulates ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Inhibition": {
+    "name": "Inhibition",
+    "desc": "",
+    "prompt_xy": "?x inhibits the effects of ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Negative_Correlation": {
+    "name": "Negative_Correlation",
+    "desc": "",
+    "prompt_xy": "?x is negatively correlated with ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct",
+      "DiseaseOrPhenotypicFeature"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Resistance": {
+    "name": "Negative_Correlation",
+    "desc": "",
+    "prompt_xy": "?x is correlated with a resistance to the chemical ?y.",
+    "domain": [
+      "SequenceVariant"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Suppression": {
+    "name": "Suppression",
+    "desc": "",
+    "prompt_xy": "?x suppresses the expression of the gene ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "false",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Negative_Correlation|Treatment": {
+    "name": "Treatment",
+    "desc": "",
+    "prompt_xy": "?x is used to treat ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "DiseaseOrPhenotypicFeature"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Cause": {
+    "name": "Cause",
+    "desc": "",
+    "prompt_xy": "?x is a cause of ?y.",
+    "domain": [
+      "SequenceVariant"
+    ],
+    "range": [
+      "DiseaseOrPhenotypicFeature"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Exhibition": {
+    "name": "Exhibition",
+    "desc": "",
+    "prompt_xy": "?x causes an increase in the expression of ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Increase": {
+    "name": "Increase",
+    "desc": "",
+    "prompt_xy": "?x improves the effectiveness of ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Induce": {
+    "name": "Induce",
+    "desc": "",
+    "prompt_xy": "?x is known to induce ?y.",
+    "domain": [
+      "ChemicalEntity"
+    ],
+    "range": [
+      "DiseaseOrPhenotypicFeature"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Positive_Correlation": {
+    "name": "Positive_Correlation",
+    "desc": "",
+    "prompt_xy": "?x is positively correlated with ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct",
+      "DiseaseOrPhenotypicFeature"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+  "Positive_Correlation|Response": {
+    "name": "Positive_Correlation",
+    "desc": "",
+    "prompt_xy": "?x increases sensitivity to ?y.",
+    "domain": [
+      "SequenceVariant"
+    ],
+    "range": [
+      "ChemicalEntity"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  },
+    "Positive_Correlation|Upregulation": {
+    "name": "Upregulation",
+    "desc": "",
+    "prompt_xy": "?x upregulates ?y.",
+    "domain": [
+      "GeneOrGeneProduct"
+    ],
+    "range": [
+      "GeneOrGeneProduct"
+    ],
+    "reflexive": "false",
+    "irreflexive": "true",
+    "symmetric": "true",
+    "antisymmetric": "false",
+    "transitive": "false",
+    "implied_by": [],
+    "tokens": [],
+    "verb": 0
+  }
+}
