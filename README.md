@@ -1,6 +1,8 @@
 # Eco-Friendly Witches: Improving Generalization Through Suspension of Disbelief for Zero-Shot Relation Extraction
 Code, data, and supplementary results for the KCAP 2025 submission "Eco-Friendly Witches: Improving Generalization Through Suspension of Disbelief for Zero-Shot Relation Extraction".
 
+Link to paper: https://doi.org/10.1145/3731443.3771346
+
 ## Requirements
 The python version we used is `3.11.7`.
 There is a requirements.txt file with the top-level Python libraries needed for the experiments, the remainder should be dependencies of those and be automatically fetched.
